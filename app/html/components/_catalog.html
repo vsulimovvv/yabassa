@@ -1,7 +1,515 @@
 <section class="catalog">
+  <div class="filters-mobile">
+    <div class="filters-mobile__top">
+      <span class="filters-mobile__title">Фильтр</span>
+      <button class="filters-mobile__close" type="button">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="filters-mobile__inner">
+      <div class="filters-mobile__accordions">
+        <div class="filters-accordion accordion">
+          <div
+            class="filters-accordion__control accordion-control"
+            type="button"
+          >
+            <span class="filters-accordion__control-link"> КАТЕГОРИЯ </span>
+            <button
+              class="filters-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
+              <svg>
+                <use xlink:href="img/sprite.svg#chevron"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="filters-accordion__content accordion-content">
+            <ul class="filters-accordion__list">
+              <li class="filters-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="filters-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="filters-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="menu-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="menu-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="menu-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filters-accordion accordion">
+          <div
+            class="filters-accordion__control accordion-control"
+            type="button"
+          >
+            <span class="filters-accordion__control-link"> Бренд </span>
+            <button
+              class="filters-accordion__control-btn accordion-control-btn"
+              type="button"
+            >
+              <svg>
+                <use xlink:href="img/sprite.svg#chevron"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="filters-accordion__content accordion-content">
+            <ul class="filters-accordion__list">
+              <li class="filters-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="filters-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="filters-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="menu-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="menu-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+              <li class="menu-accordion__item">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" />
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Категория 1</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="filters-mobile__price">
+        <span class="filters-mobile__name">Цена</span>
+        <div class="catalog-dropdown catalog-dropdown--price">
+          <div class="range-slider range-slider--price">
+            <div class="range-slider__range" id="slider-price"></div>
+            <div class="range-slider__values">
+              <input
+                class="range-slider__min"
+                type="text"
+                placeholder="От 10 000"
+              />
+
+              <input
+                class="range-slider__max"
+                type="text"
+                placeholder="До 100 млн"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filters-mobile__size">
+        <span class="filters-mobile__name">РАЗМЕР</span>
+        <ul class="filters-mobile__sizes">
+          <li class="filters-mobile__size-item">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" checked />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">xs</span>
+            </label>
+          </li>
+          <li class="filters-mobile__size-item">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">s</span>
+            </label>
+          </li>
+          <li class="filters-mobile__size-item">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">m</span>
+            </label>
+          </li>
+          <li class="filters-mobile__size-item">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">l</span>
+            </label>
+          </li>
+          <li class="filters-mobile__size-item">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">xl</span>
+            </label>
+          </li>
+          <li class="filters-mobile__size-item">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" />
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">xxl</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="filters-mobile__colors">
+        <span class="filters-mobile__name">Цвет</span>
+        <ul class="filters-mobile__colors-inner">
+          <li class="filters-mobile__color"></li>
+          <li class="filters-mobile__color"></li>
+          <li class="filters-mobile__color"></li>
+          <li class="filters-mobile__color"></li>
+          <li class="filters-mobile__color"></li>
+          <li class="filters-mobile__color"></li>
+        </ul>
+      </div>
+
+      <div class="filters-mobile__btns">
+        <button
+          class="filters-mobile__btn filters-mobile__btn--save"
+          type="submit"
+        >
+          СОХРАНИТЬ
+        </button>
+        <button
+          class="filters-mobile__btn filters-mobile__btn--reset"
+          type="reset"
+        >
+          Очистить
+
+          <svg>
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <h1 class="catalog__title section-title">Верхняя одежда</h1>
-    <div class="catalog__filters filters"></div>
+    <div class="catalog__filters filters">
+      <div class="filters__wrapper">
+        <button class="filters__btn" type="button">
+          <span>
+            <svg>
+              <use xlink:href="img/sprite.svg#filters-icon"></use>
+            </svg>
+          </span>
+        </button>
+
+        <button class="filters__btn filters__btn--mobile" type="button">
+          <span>ФИЛЬТР</span>
+          <svg>
+            <use xlink:href="img/sprite.svg#filters-icon"></use>
+          </svg>
+        </button>
+
+        <div class="filters__filters">
+          <div class="filters__list">
+            <div class="filters__item">
+              Категория
+
+              <div class="catalog-dropdown catalog-dropdown--categories">
+                <div class="catalog-dropdown__inner">
+                  <ul class="catalog-dropdown__list">
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 1</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 3</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 1</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 3</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 1</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Категория 3</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filters__item">
+              Цвет
+
+              <div class="catalog-dropdown catalog-dropdown--colors">
+                <div class="catalog-dropdown__inner">
+                  <ul class="catalog-dropdown__colors">
+                    <li class="catalog-dropdown__color"></li>
+                    <li class="catalog-dropdown__color"></li>
+                    <li class="catalog-dropdown__color"></li>
+                    <li class="catalog-dropdown__color"></li>
+                    <li class="catalog-dropdown__color"></li>
+                    <li class="catalog-dropdown__color"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filters__item">
+              Материал
+
+              <div class="catalog-dropdown catalog-dropdown--materials">
+                <div class="catalog-dropdown__inner">
+                  <ul class="catalog-dropdown__list">
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 1 </span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 3</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 1</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 3</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 1</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 2</span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Материал 3</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filters__item">
+              Размер
+
+              <div class="catalog-dropdown catalog-dropdown--size">
+                <div class="catalog-dropdown__inner">
+                  <ul class="catalog-dropdown__list">
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">XS </span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">S </span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">M </span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">L </span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">XL </span>
+                      </label>
+                    </li>
+                    <li class="catalog-dropdown__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">XXL </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="filters__item">
+              <span>Цена</span>
+              <div class="catalog-dropdown catalog-dropdown--price">
+                <div class="range-slider range-slider--price">
+                  <div class="range-slider__range" id="slider-price"></div>
+                  <div class="range-slider__values">
+                    <input
+                      class="range-slider__min"
+                      type="text"
+                      placeholder="От 10 000"
+                    />
+
+                    <input
+                      class="range-slider__max"
+                      type="text"
+                      placeholder="До 100 млн"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="filters__close">
+            <svg>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <select class="filters__select">
+          <option value="0">Сначала новинки</option>
+          <option value="1">Сначала старые</option>
+          <option value="2">По рейтингу</option>
+        </select>
+      </div>
+    </div>
 
     <ul class="catalog__list">
       <li class="catalog__item">
