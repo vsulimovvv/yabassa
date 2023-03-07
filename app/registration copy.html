@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>YaBassA</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="registration">
+  <div class="container">
+    <div class="registration__wrapper">
+      <div class="registration__top">
+        <h1 class="registration__title section-title">Регистрация</h1>
+        <a class="registration__link" href="login.html">войти</a>
+      </div>
+
+      <form class="registration__form form-registration">
+        <div class="form-registration__group">
+          <label class="form-registration__label">E-mail или телефон</label>
+          <input
+            class="form-registration__input"
+            type="text"
+            placeholder="Введите Ваш e-mail или телефон"
+          />
+        </div>
+        <div class="form-registration__group">
+          <label class="form-registration__label">Пароль</label>
+          <div class="form-registration__input-wrap form-wrap">
+            <input
+              class="form-registration__input input-pas"
+              type="password"
+              placeholder="Введите пароль"
+            />
+            <button class="btn-change-password" type="button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="form-registration__group">
+          <label class="form-registration__label">Повторите пароль</label>
+          <div class="form-registration__input-wrap form-wrap">
+            <input
+              class="form-registration__input input-pas"
+              type="password"
+              placeholder="Введите пароль повторно"
+            />
+            <button class="btn-change-password" type="button">
+              <svg
+                width="22"
+                height="16"
+                viewBox="0 0 22 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <p class="form-registration__text">
+          Осуществляя регистрацию на сайте вы принимаете условия
+          <a href="#">пользовательского соглашения</a> и
+          <a href="#">политики конфиденциальности</a>.
+        </p>
+
+        <button class="form-registration__btn btn" type="submit">
+          Зарегистрироваться
+        </button>
+      </form>
+
+      <!-- <div class="registration__socials-reg socials-reg">
+          <span class="socials-reg__name">Зарегистрироваться через</span>
+          <ul class="socials-reg__list">
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/vk.webp" type="image/webp" />
+                  <img src="img/socials/vk.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/ok.webp" type="image/webp" />
+                  <img src="img/socials/ok.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/yandex.webp" type="image/webp" />
+                  <img src="img/socials/yandex.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+            <li class="socials-reg__item">
+              <a class="socials-reg__link" href="#">
+                <picture>
+                  <source srcset="img/socials/google.webp" type="image/webp" />
+                  <img src="img/socials/google.png" alt="img" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div> -->
+    </div>
+  </div>
+</section>
+
+        <section class="subscribe">
+  <div class="container">
+    <div class="subscribe__wrapper">
+      <div class="subscribe__top">
+        <h2 class="subscribe__title section-title">Подпишитесь</h2>
+        <p class="subscribe__text">
+          Подпишитесь на нашу новостную рассылку <br />
+          и будьте в курсе всех новостей и акций.
+        </p>
+      </div>
+
+      <form class="subscribe__form form-subscribe">
+        <div class="form-subscribe__group">
+          <input
+            class="form-subscribe__input"
+            type="text"
+            placeholder="Введите Ваш e-mail"
+          />
+          <button class="form-subscribe__send">
+            <svg>
+              <use xlink:href="img/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+        <div class="socials">
+  <div class="container">
+    <ul class="socials__list">
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="socials__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </span>
+          <span class="socials__name">Вконтакте</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="socials__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg>
+          </span>
+          <span class="socials__name">instagram</span>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="#">
+          <span class="socials__icon">
+            <svg>
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </span>
+          <span class="socials__name">telegram</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <div class="footer__col footer__col--first">
+            <a class="footer__logo logo" href="#">
+              <img src="img/logo.png" alt="img" />
+            </a>
+            <p class="footer__text">
+              © 2022 – YaBassa — модный интернет-магазин одежды, обуви и
+              аксессуаров. Все права защищены. Доставка по всему миру.
+            </p>
+          </div>
+          <div class="footer__col">
+            <span class="footer__name">Каталог</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Одежда для женщин </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Одежда для мжчин</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Одежда для детей</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Обувь</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Сумки и аксессуары</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <span class="footer__name">Компания</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Оплата и доставка</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Возврат товара</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Вопрос - ответ</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Тех поддержка</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__col">
+            <span class="footer__name">YaBassa в соц сетях</span>
+            <ul class="footer-socials">
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                  <span>Вконтакте</span>
+                </a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                  </svg>
+                  <span>Telegram</span>
+                </a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="#">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#ok-ru"></use>
+                  </svg>
+                  <span> Одноклассники</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <span class="footer__name">Поддержка клиентов</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <p class="footer__schedule">ежедневно с 09:00 - 23:00 (мск)</p>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="tel:+74951234567">
+                  8 (495) 123 45 67
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="mailto:support@yabassa.com">
+                  support@yabassa.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <a class="footer__policy" href="#">Политика конфиденциальности</a>
+
+        <div class="footer__details">
+          <ul class="footer__payment footer-payment">
+            <li class="footer-payment__item">
+              <picture>
+                <source srcset="img/payments/visa.webp" type="image/webp" />
+                <img src="img/payments/visa.png" alt="img" />
+              </picture>
+            </li>
+            <li class="footer-payment__item">
+              <picture>
+                <source
+                  srcset="img/payments/mastercard.webp"
+                  type="image/webp"
+                />
+                <img src="img/payments/mastercard.png" alt="img" />
+              </picture>
+            </li>
+            <li class="footer-payment__item">
+              <picture>
+                <source srcset="img/payments/qiwibank.webp" type="image/webp" />
+                <img src="img/payments/qiwibank.png" alt="img" />
+              </picture>
+            </li>
+            <li class="footer-payment__item">
+              <picture>
+                <source srcset="img/payments/yoomoney.webp" type="image/webp" />
+                <img src="img/payments/yoomoney.png" alt="img" />
+              </picture>
+            </li>
+            <li class="footer-payment__item">
+              <picture>
+                <source srcset="img/payments/alfabank.webp" type="image/webp" />
+                <img src="img/payments/alfabank.png" alt="img" />
+              </picture>
+            </li>
+            <li class="footer-payment__item">
+              <picture>
+                <source srcset="img/payments/sberbank.webp" type="image/webp" />
+                <img src="img/payments/sberbank.png" alt="img" />
+              </picture>
+            </li>
+          </ul>
+          <a
+            class="company"
+            href="https://razrabotka-saita.ru/"
+            target="_blank"
+          >
+            <span>Разработка сайта</span>
+            <img src="img/logo-company.png" alt="АдвансМедиа" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
