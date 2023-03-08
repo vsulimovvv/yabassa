@@ -93,7 +93,7 @@
 
 
     <div class="site-wrapper">
-      <header class="header header--main">
+      <header class="header header">
   <!-- Mobile Menu -->
   <div class="overlay"></div>
 
@@ -359,144 +359,149 @@
 </header>
 
 
-      <main class="main mt-0">
-        <section class="about">
+      <main class="main">
+        <section class="cart">
   <div class="container">
-    <div class="about__wrapper">
-      <div class="about__offer">
-        <h1 class="about__title">Интрнет-магазин YaBassA — это</h1>
-        <p class="about__text">
-          одежда, в такт идущая с нынешними тенденциями моды. Наши бренды
-          сочетают в себе презентабельность и стильность производимой одежды,
-          при этом сохраняя доступность и приемлемость цены для оптовых
-          покупателей.
-        </p>
+    <h2 class="cart__title section-title">Корзина</h2>
+
+    <div class="cart__wrapper">
+      <div class="cart__left">
+        <ul class="cart__list">
+          <li class="cart__item">
+            <article class="cart-card">
+              <div class="cart-card__inner">
+                <button class="cart-card__remove" type="button">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <div class="cart-card__left">
+                  <picture>
+                    <source srcset="img/product/1.webp" type="image/webp" />
+                    <img class="image" src="img/product/1.jpg" alt="img" />
+                  </picture>
+                </div>
+                <div class="cart-card__right">
+                  <h3 class="cart-card__title">Блузка с V-образным вырезом</h3>
+                  <div class="cart-card__details">
+                    <div class="cart-card__detail">Размер: <span>М</span></div>
+                    <div class="cart-card__detail">
+                      Количество:
+                      <div class="cart-card__counter counter">
+                        <button
+                          class="counter__btn counter__btn--decrease"
+                          type="button"
+                          aria-label="Добавить"
+                        >
+                          -
+                        </button>
+                        <input class="counter__input" type="number" value="1" />
+                        <button
+                          class="counter__btn counter__btn--increase"
+                          type="button"
+                          aria-label="Вычесть"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-card__price">8 500 ₽</div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cart__item">
+            <article class="cart-card">
+              <div class="cart-card__inner">
+                <button class="cart-card__remove" type="button">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <div class="cart-card__left">
+                  <picture>
+                    <source srcset="img/product/1.webp" type="image/webp" />
+                    <img class="image" src="img/product/1.jpg" alt="img" />
+                  </picture>
+                </div>
+                <div class="cart-card__right">
+                  <h3 class="cart-card__title">Блузка с V-образным вырезом</h3>
+                  <div class="cart-card__details">
+                    <div class="cart-card__detail">Размер: <span>М</span></div>
+                    <div class="cart-card__detail">
+                      Количество:
+                      <div class="cart-card__counter counter">
+                        <button
+                          class="counter__btn counter__btn--decrease"
+                          type="button"
+                          aria-label="Добавить"
+                        >
+                          -
+                        </button>
+                        <input class="counter__input" type="number" value="1" />
+                        <button
+                          class="counter__btn counter__btn--increase"
+                          type="button"
+                          aria-label="Вычесть"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-card__price">8 500 ₽</div>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <form class="cart__form form-promocode">
+          <span class="form-promocode__text">
+            Получите скидку с промокодом!
+          </span>
+
+          <div class="form-promocode__inner">
+            <input
+              class="form-promocode__input"
+              type="text"
+              placeholder="Введите промокод"
+            />
+            <button class="form-promocode__btn btn btn--transparent">
+              Применить
+            </button>
+          </div>
+        </form>
       </div>
-    </div>
-  </div>
-</section>
-
-        <section class="advantages">
-  <div class="container">
-    <h2 class="visually-hidden">Преимущества</h2>
-    <ul class="advantages__list">
-      <li class="advantages-item">
-        <p class="advantages-item__text">
-          7 лет на Российском <br />
-          рынке
-        </p>
-      </li>
-      <li class="advantages-item">
-        <p class="advantages-item__text">
-          Узнаваемость <br />
-          бренда
-        </p>
-      </li>
-      <li class="advantages-item">
-        <p class="advantages-item__text">
-          Доступность цен <br />
-          и высокое качество
-        </p>
-      </li>
-      <li class="advantages-item">
-        <p class="advantages-item__text">
-          5000+ партнеров <br />
-          по всей России
-        </p>
-      </li>
-    </ul>
-  </div>
-</section>
-
-        <section class="history">
-  <div class="container">
-    <div class="history__wrapper">
-      <div class="history__left">
-        <picture>
-          <source srcset="img/history-img.webp" type="image/webp" />
-          <img class="history__img" src="img/history-img.jpg" alt="img" />
-        </picture>
-      </div>
-      <div class="history__right">
-        <h2 class="history__title section-title">
-          История <span>YaBassA</span>
-        </h2>
-
-        <div class="history__text">
-          <p>
-            Компания успешно существует на рынке более 5 лет. Основателями
-            лейбла являются хозяева не менее известного бренда “Джей”, который
-            существовал на рынке с 1997 года, и успешно зарекомендовал себя
-            среди производителей и поставщиков верхней женской одежды, а так же
-            завоевал уважение и доверие среди клиентов. В 2011 году, произошел
-            ребрендинг фирмы ”Джей”, после чего, компания стала называться
-            “Yabassa”. На сегодняшний день с компанией “Yabassa” работает много
-            крупных и мелких оптовых клиентов по всей России.
-          </p>
-          <p>
-            Мы с радостью предлагаем Вам ознакомится с нашими новыми
-            коллекциями! И надеемся на долгосрочное сотрудничество!
-          </p>
+      <div class="cart__right cart-right">
+        <div class="cart-right__inner">
+          <div class="cart-right__items">
+            <div class="cart-right__item">
+              <div class="cart-right__left">Товаров на сумму:</div>
+              <div class="cart-right__right">15 900 ₽</div>
+            </div>
+            <div class="cart-right__item">
+              <div class="cart-right__left">Доставка:</div>
+              <div class="cart-right__right">300 ₽</div>
+            </div>
+            <div class="cart-right__total">
+              <div class="cart-right__left">Итого:</div>
+              <div class="cart-right__right">16 200 ₽</div>
+            </div>
+          </div>
+          <div class="cart-right__btns">
+            <a class="cart-right__btn btn" href="#">Перейти к оформлению</a>
+            <a
+              class="cart-right__btn cart-right__btn--back btn btn--transparent"
+              href="#"
+            >
+              Назад к покупкам
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-        <section class="brands brands--title">
-  <div class="container">
-    <h2 class="brands__title section-title">Работаем с популярными брендами</h2>
-
-    <ul class="brands__list">
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/1.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/1.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/2.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/2.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/3.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/3.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/4.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/4.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/5.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/5.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/6.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/6.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/7.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/7.png" alt="img" />
-        </picture>
-      </li>
-      <li class="brands-item">
-        <picture>
-          <source srcset="img/brands/8.webp" type="image/webp" />
-          <img class="brands-item__img" src="img/brands/8.png" alt="img" />
-        </picture>
-      </li>
-    </ul>
   </div>
 </section>
 

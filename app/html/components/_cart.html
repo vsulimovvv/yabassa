@@ -1,0 +1,144 @@
+<section class="cart">
+  <div class="container">
+    <h2 class="cart__title section-title">Корзина</h2>
+
+    <div class="cart__wrapper">
+      <div class="cart__left">
+        <ul class="cart__list">
+          <li class="cart__item">
+            <article class="cart-card">
+              <div class="cart-card__inner">
+                <button class="cart-card__remove" type="button">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <div class="cart-card__left">
+                  <picture>
+                    <source srcset="img/product/1.webp" type="image/webp" />
+                    <img class="image" src="img/product/1.jpg" alt="img" />
+                  </picture>
+                </div>
+                <div class="cart-card__right">
+                  <h3 class="cart-card__title">Блузка с V-образным вырезом</h3>
+                  <div class="cart-card__details">
+                    <div class="cart-card__detail">Размер: <span>М</span></div>
+                    <div class="cart-card__detail">
+                      Количество:
+                      <div class="cart-card__counter counter">
+                        <button
+                          class="counter__btn counter__btn--decrease"
+                          type="button"
+                          aria-label="Добавить"
+                        >
+                          -
+                        </button>
+                        <input class="counter__input" type="number" value="1" />
+                        <button
+                          class="counter__btn counter__btn--increase"
+                          type="button"
+                          aria-label="Вычесть"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-card__price">8 500 ₽</div>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="cart__item">
+            <article class="cart-card">
+              <div class="cart-card__inner">
+                <button class="cart-card__remove" type="button">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <div class="cart-card__left">
+                  <picture>
+                    <source srcset="img/product/1.webp" type="image/webp" />
+                    <img class="image" src="img/product/1.jpg" alt="img" />
+                  </picture>
+                </div>
+                <div class="cart-card__right">
+                  <h3 class="cart-card__title">Блузка с V-образным вырезом</h3>
+                  <div class="cart-card__details">
+                    <div class="cart-card__detail">Размер: <span>М</span></div>
+                    <div class="cart-card__detail">
+                      Количество:
+                      <div class="cart-card__counter counter">
+                        <button
+                          class="counter__btn counter__btn--decrease"
+                          type="button"
+                          aria-label="Добавить"
+                        >
+                          -
+                        </button>
+                        <input class="counter__input" type="number" value="1" />
+                        <button
+                          class="counter__btn counter__btn--increase"
+                          type="button"
+                          aria-label="Вычесть"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-card__price">8 500 ₽</div>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+
+        <form class="cart__form form-promocode">
+          <span class="form-promocode__text">
+            Получите скидку с промокодом!
+          </span>
+
+          <div class="form-promocode__inner">
+            <input
+              class="form-promocode__input"
+              type="text"
+              placeholder="Введите промокод"
+            />
+            <button class="form-promocode__btn btn btn--transparent">
+              Применить
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="cart__right cart-right">
+        <div class="cart-right__inner">
+          <div class="cart-right__items">
+            <div class="cart-right__item">
+              <div class="cart-right__left">Товаров на сумму:</div>
+              <div class="cart-right__right">15 900 ₽</div>
+            </div>
+            <div class="cart-right__item">
+              <div class="cart-right__left">Доставка:</div>
+              <div class="cart-right__right">300 ₽</div>
+            </div>
+            <div class="cart-right__total">
+              <div class="cart-right__left">Итого:</div>
+              <div class="cart-right__right">16 200 ₽</div>
+            </div>
+          </div>
+          <div class="cart-right__btns">
+            <a class="cart-right__btn btn" href="#">Перейти к оформлению</a>
+            <a
+              class="cart-right__btn cart-right__btn--back btn btn--transparent"
+              href="#"
+            >
+              Назад к покупкам
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
