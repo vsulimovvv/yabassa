@@ -11,3 +11,4 @@
 Тех. поддержка: https://vsulimovvv.github.io/yabassa/app/support.html  
 Войти: https://vsulimovvv.github.io/yabassa/app/login.html  
 Регистрация: https://vsulimovvv.github.io/yabassa/app/registration.html  
+Корзина: https://vsulimovvv.github.io/yabassa/app/cart.html  

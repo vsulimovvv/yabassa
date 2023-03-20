@@ -129,41 +129,43 @@ window.addEventListener('DOMContentLoaded', () => {
   })();
 
   (function handlesSlider() {
-    const parent = document.querySelector('.range-slider--price');
+    const parent = document.querySelectorAll('.range-slider--price');
 
-    if (parent) {
-      const handlesSlider = parent.querySelector('#slider-price');
-      const minStep = parent.querySelector('.range-slider__min');
-      const maxStep = parent.querySelector('.range-slider__max');
-      const inputs = [minStep, maxStep];
+    parent.forEach((el) => {
+      if (el) {
+        const handlesSlider = el.querySelector('.range-slider__range');
+        const minStep = el.querySelector('.range-slider__min');
+        const maxStep = el.querySelector('.range-slider__max');
+        const inputs = [minStep, maxStep];
 
-      noUiSlider.create(handlesSlider, {
-        start: [10000, 100000],
-        connect: true,
-        padding: [10, 10],
-        range: {
-          min: [2500],
-          max: [150000],
-        },
-        format: wNumb({
-          decimals: 0,
-          thousand: ' ',
-          suffix: ' ',
-        }),
-      });
+        noUiSlider.create(handlesSlider, {
+          start: [10000, 100000],
+          connect: true,
+          padding: [10, 10],
+          range: {
+            min: [2500],
+            max: [150000],
+          },
+          format: wNumb({
+            decimals: 0,
+            thousand: ' ',
+            suffix: ' ',
+          }),
+        });
 
-      handlesSlider.noUiSlider.on('update', function (values, handle) {
-        inputs[handle].value = values[handle];
-      });
+        handlesSlider.noUiSlider.on('update', function (values, handle) {
+          inputs[handle].value = values[handle];
+        });
 
-      minStep.addEventListener('change', function () {
-        handlesSlider.noUiSlider.set([this.value, null]);
-      });
+        minStep.addEventListener('change', function () {
+          handlesSlider.noUiSlider.set([this.value, null]);
+        });
 
-      maxStep.addEventListener('change', function () {
-        handlesSlider.noUiSlider.set([null, this.value]);
-      });
-    }
+        maxStep.addEventListener('change', function () {
+          handlesSlider.noUiSlider.set([null, this.value]);
+        });
+      }
+    });
   })();
 
   // * ===== Fixed Header
@@ -247,7 +249,7 @@ window.addEventListener('DOMContentLoaded', () => {
   })();
 
   // * ===== Show Search
-  (function showFilters() {
+  (function showSearch() {
     const menuBtn = document.querySelector('.search-btn');
     const menu = document.querySelector('.header-search');
     const menuCloseBtn = document.querySelector('.header-search__close');
@@ -263,22 +265,22 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  // * ===== Show Filters
-  (function showFilters() {
-    const menuBtn = document.querySelector('.filters__btn');
-    const menu = document.querySelector('.filters__filters');
-    const menuCloseBtn = document.querySelector('.filters__close');
+  // // * ===== Show Filters
+  // (function showFilters() {
+  //   const menuBtn = document.querySelector('.filters__btn');
+  //   const menu = document.querySelector('.filters__filters');
+  //   const menuCloseBtn = document.querySelector('.filters__close');
 
-    if (menuBtn) {
-      menuBtn.addEventListener('click', (e) => {
-        menu.classList.toggle('active');
-      });
+  //   if (menuBtn) {
+  //     menuBtn.addEventListener('click', (e) => {
+  //       menu.classList.toggle('active');
+  //     });
 
-      menuCloseBtn.addEventListener('click', (e) => {
-        menu.classList.remove('active');
-      });
-    }
-  })();
+  //     menuCloseBtn.addEventListener('click', (e) => {
+  //       menu.classList.remove('active');
+  //     });
+  //   }
+  // })();
 
   // * ===== Show Filters Mobile
   (function showFiltersMobile() {
@@ -296,6 +298,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   })();
+
   //   // * ===== Modal
   //   (function modals() {
   //     function bindModal(openBtn, modal, close) {
@@ -329,93 +332,4 @@ window.addEventListener('DOMContentLoaded', () => {
   //     }
   //     bindModal('.online-booking-btn', '.popup--online-booking', '.popup__close');
   //   })();
-  //   // * ===== Toggle Tabs
-  //   function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
-  //     const header = document.querySelectorAll(headerSelector);
-  //     const tab = document.querySelectorAll(tabSelector);
-  //     const content = document.querySelectorAll(contentSelector);
-  //     header.forEach((el) => {
-  //       if (el) {
-  //         hideTabContent();
-  //         showTabContent();
-  //         function hideTabContent() {
-  //           content.forEach((item) => {
-  //             item.classList.remove('active');
-  //           });
-  //           tab.forEach((item) => {
-  //             item.classList.remove(activeClass);
-  //           });
-  //         }
-  //         function showTabContent(i = 0) {
-  //           content[i].classList.add('active');
-  //           tab[i].classList.add(activeClass);
-  //         }
-  //         header.forEach((item) => {
-  //           if (item) {
-  //             item.addEventListener('click', (e) => {
-  //               const target = e.target;
-  //               if (target.classList.contains(tabSelector.replace(/\./, ''))) {
-  //                 tab.forEach((item, i) => {
-  //                   if (target == item || target.parentNode == item) {
-  //                     hideTabContent();
-  //                     showTabContent(i);
-  //                   }
-  //                 });
-  //               }
-  //             });
-  //           }
-  //         });
-  //       }
-  //     });
-  //   }
-  //   someTabs('.contacts', '.contacts-top__item', '.contacts__content', 'active');
-  //   function toggleTabs(
-  //     headerSelector,
-  //     tabSelector,
-  //     contentSelector,
-  //     activeClass
-  //   ) {
-  //     const header = document.querySelectorAll(headerSelector);
-  //     const tab = document.querySelectorAll(tabSelector);
-  //     const content = document.querySelectorAll(contentSelector);
-  //     header.forEach((el) => {
-  //       if (el) {
-  //         hideTabContent();
-  //         showTabContent();
-  //         function hideTabContent() {
-  //           content.forEach((item) => {
-  //             item.classList.remove('active');
-  //           });
-  //           tab.forEach((item) => {
-  //             item.classList.remove(activeClass);
-  //           });
-  //         }
-  //         function showTabContent(i = 4) {
-  //           content[i].classList.add('active');
-  //           tab[i].classList.add(activeClass);
-  //         }
-  //         header.forEach((item) => {
-  //           if (item) {
-  //             item.addEventListener('click', (e) => {
-  //               const target = e.target;
-  //               if (target.classList.contains(tabSelector.replace(/\./, ''))) {
-  //                 tab.forEach((item, i) => {
-  //                   if (target == item || target.parentNode == item) {
-  //                     hideTabContent();
-  //                     showTabContent(i);
-  //                   }
-  //                 });
-  //               }
-  //             });
-  //           }
-  //         });
-  //       }
-  //     });
-  //   }
-  //   toggleTabs(
-  //     '.price-list',
-  //     '.price-list-top__btn',
-  //     '.price-list__content',
-  //     'active'
-  //   );
 });
