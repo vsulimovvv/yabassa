@@ -6106,6 +6106,17 @@ body.no-scroll {
       );
   }
 }
+.form-checkout__group--required {
+  position: relative;
+}
+.form-checkout__group--required::after {
+  position: absolute;
+  content: "*";
+  color: var(--color-red);
+  top: -10px;
+  left: -10px;
+  font-size: 20px;
+}
 .form-checkout__input {
   width: 100%;
   height: 100%;
