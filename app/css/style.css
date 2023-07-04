@@ -457,6 +457,20 @@ body.no-scroll {
   font-size: 15px;
 }
 
+.page__hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+}
+@media (max-width: 1300px) {
+  .page__hero {
+    height: calc(
+        400px + 600 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
 .page__wrapper {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -1917,6 +1931,10 @@ body.no-scroll {
   -webkit-transition: 200ms ease;
   -o-transition: 200ms ease;
   transition: 200ms ease;
+}
+.header--transparent {
+  background-color: transparent;
+  border-bottom: none;
 }
 
 .hero {
