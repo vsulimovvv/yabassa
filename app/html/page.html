@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        <div class="page">
+          <div class="container">
+            <div class="page__wrapper">
+              <div class="page__item">
+                <button class="page__btn btn" type="button">
+                  Оформить заказ
+                </button>
+              </div>
+              <div class="page__item">
+                <button class="page__btn btn" type="button">
+                  Задать вопрос
+                </button>
+              </div>
+            </div>
+          </div>
+
+          @include('./components/_socials.html')
+        </div>
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

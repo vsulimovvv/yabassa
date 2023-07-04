@@ -457,6 +457,133 @@ body.no-scroll {
   font-size: 15px;
 }
 
+.page__wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  place-content: center;
+}
+@media (max-width: 1300px) {
+  .page__wrapper {
+    padding-top: calc(
+        40px + 30 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .page__wrapper {
+    padding-bottom: calc(
+        40px + 30 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 991.98px) {
+  .page__wrapper {
+    gap: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .page__wrapper {
+    gap: 10px;
+  }
+}
+.page__item {
+  background-color: #ccc;
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 1300px) {
+  .page__item {
+    padding-top: calc(
+        15px + 5 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .page__item {
+    padding-bottom: calc(
+        15px + 5 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .page__item {
+    padding-left: calc(
+        10px + 20 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .page__item {
+    padding-right: calc(
+        10px + 20 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+.page__btn {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 700;
+  max-width: 300px;
+  width: 100%;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 1300px) {
+  .page__btn {
+    font-size: calc(
+        11px + 13 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .page__btn {
+    padding-left: calc(
+        10px + 10 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .page__btn {
+    padding-right: calc(
+        10px + 10 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 359.98px) {
+  .page__btn {
+    font-size: 10px;
+  }
+}
+
 @-webkit-keyframes opacity-visibility {
   0% {
     opacity: 0;
@@ -5904,4 +6031,193 @@ body.no-scroll {
   .cart-card__counter .counter__input {
     font-size: 12px;
   }
+}
+
+.checkout {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 1300px) {
+  .checkout {
+    padding-top: calc(
+        40px + 30 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .checkout {
+    padding-bottom: calc(
+        40px + 30 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+.checkout__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1300px) {
+  .checkout__title {
+    font-size: calc(
+        16px + 4 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .checkout__title {
+    margin-bottom: calc(
+        50px + 30 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+
+.form-checkout__inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+@media (max-width: 991.98px) {
+  .form-checkout__inputs {
+    gap: 20px;
+  }
+}
+.form-checkout__group {
+  width: 100%;
+  height: 50px;
+}
+.form-checkout__group--big {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  height: 230px;
+}
+@media (max-width: 1300px) {
+  .form-checkout__group--big {
+    height: calc(
+        130px + 100 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+.form-checkout__input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--color-dark);
+  display: block;
+  color: var(--color-dark);
+  font-size: 24px;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (max-width: 1300px) {
+  .form-checkout__input {
+    font-size: calc(
+        20px + 4 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .form-checkout__input {
+    padding-left: calc(
+        10px + 10 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+@media (max-width: 1300px) {
+  .form-checkout__input {
+    padding-right: calc(
+        10px + 10 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+.form-checkout__btn {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 767.98px) {
+  .form-checkout__btn {
+    max-width: 100%;
+  }
+}
+.form-checkout .form__attach {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.form-checkout .form__attach .custom-file-upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.form-checkout .form__attach .custom-file-upload__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.form-checkout .form__attach .custom-file-upload__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 1.2;
+  font-size: 20px;
+}
+@media (max-width: 1300px) {
+  .form-checkout .form__attach .custom-file-upload__text {
+    font-size: calc(
+        16px + 4 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+.form-checkout .form__attach .custom-file-upload__text small {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+  -webkit-transition: 150ms ease;
+  -o-transition: 150ms ease;
+  transition: 150ms ease;
+  font-size: 14px;
+  margin-top: 5px;
+}
+@media (max-width: 1300px) {
+  .form-checkout .form__attach .custom-file-upload__text small {
+    font-size: calc(
+        12px + 2 *
+          ((100vw - 360px) / 940)
+      );
+  }
+}
+
+input[type=file] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

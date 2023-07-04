@@ -1,6 +1,23 @@
 window.addEventListener('DOMContentLoaded', () => {
-  //   // * ===== Mask input
-  //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
+  (function loadForm() {
+    let inputs = document.querySelectorAll('.input-file-upload');
+    Array.prototype.forEach.call(inputs, function (input) {
+      let label = input.previousElementSibling,
+        labelVal = label.querySelector('.custom-file-upload small').innerText;
+
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+
+        if (countFiles)
+          label.querySelector('.custom-file-upload small').innerText =
+            'Выбрано файлов: ' + countFiles;
+        else
+          label.querySelector('.custom-file-upload small').innerText = labelVal;
+      });
+    });
+  })();
 
   // * ===== Nice Select
   $('select').niceSelect();
@@ -264,23 +281,6 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
   })();
-
-  // // * ===== Show Filters
-  // (function showFilters() {
-  //   const menuBtn = document.querySelector('.filters__btn');
-  //   const menu = document.querySelector('.filters__filters');
-  //   const menuCloseBtn = document.querySelector('.filters__close');
-
-  //   if (menuBtn) {
-  //     menuBtn.addEventListener('click', (e) => {
-  //       menu.classList.toggle('active');
-  //     });
-
-  //     menuCloseBtn.addEventListener('click', (e) => {
-  //       menu.classList.remove('active');
-  //     });
-  //   }
-  // })();
 
   // * ===== Show Filters Mobile
   (function showFiltersMobile() {

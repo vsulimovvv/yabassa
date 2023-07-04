@@ -1,0 +1,102 @@
+<section class="checkout">
+  <div class="container">
+    <h2 class="checkout__title">Оформить заказ</h2>
+
+    <form class="form-checkout">
+      <div class="form-checkout__inputs">
+        <label class="form-checkout__group">
+          <input class="form-checkout__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="text"
+            placeholder="Фамилия"
+          />
+        </label>
+        <label class="form-checkout__group">
+          <input class="form-checkout__input" type="text" placeholder="Бренд" />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="text"
+            placeholder="Артикул"
+          />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="text"
+            placeholder="Размер"
+          />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="email"
+            placeholder="E-mail"
+          />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="tel"
+            placeholder="Телефон"
+          />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="text"
+            placeholder="Whats Up"
+          />
+        </label>
+        <label class="form-checkout__group">
+          <input
+            class="form-checkout__input"
+            type="text"
+            placeholder="Модель"
+          />
+        </label>
+        <label class="form-checkout__group form-checkout__group--big">
+          <textarea
+            class="form-checkout__input"
+            placeholder="Описание товара"
+          ></textarea>
+        </label>
+      </div>
+
+      <div class="form__attach">
+        <label class="custom-file-upload" for="photo">
+          <svg
+            class="custom-file-upload__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13"
+            />
+          </svg>
+          <span class="custom-file-upload__text">
+            Фото (если не известен артикул или модель) <small></small>
+          </span>
+        </label>
+        <input
+          class="input-file-upload"
+          id="photo"
+          type="file"
+          name="photo"
+          multiple
+        />
+      </div>
+
+      <button class="form-checkout__btn btn" type="submit">Отправить</button>
+    </form>
+  </div>
+</section>
