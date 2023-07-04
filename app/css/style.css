@@ -1554,6 +1554,17 @@ body.no-scroll {
   height: 20px;
   fill: #4a4a4a;
 }
+.footer--mini .footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
 .header {
   padding: 40px 0;
