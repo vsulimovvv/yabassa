@@ -14,4 +14,5 @@
 Корзина: https://vsulimovvv.github.io/yabassa/app/cart.html
 
 Оформить заказ: https://vsulimovvv.github.io/yabassa/app/checkout.html  
-Страница заглушка: https://vsulimovvv.github.io/yabassa/app/page.html
+Страница заглушка: https://vsulimovvv.github.io/yabassa/app/page.html  
+Вопрос ответ: https://vsulimovvv.github.io/yabassa/app/help.html
