@@ -66,6 +66,25 @@ window.addEventListener('DOMContentLoaded', () => {
   })();
 
   // * ===== Accordion
+  // const toggleAccordion = (accordionControl, accordionContent, accordion) => {
+  //   const filters = document.querySelectorAll(accordionControl);
+  //   filters.forEach((el) => {
+  //     if (el) {
+  //       el.addEventListener('click', (e) => {
+  //         const target = e.target.closest(accordion);
+  //         const content = target.querySelector(accordionContent);
+  //         target.classList.toggle('active');
+  //         if (target.classList.contains('active')) {
+  //           content.style.maxHeight = content.scrollHeight + '1px';
+  //         } else {
+  //           content.style.maxHeight = null;
+  //         }
+  //       });
+  //     }
+  //   });
+  // };
+  // toggleAccordion('.accordion-control-btn', '.accordion-content', '.accordion');
+
   const toggleAccordion = (accordionControl, accordionContent, accordion) => {
     const filters = document.querySelectorAll(accordionControl);
     filters.forEach((el) => {
@@ -75,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
           const content = target.querySelector(accordionContent);
           target.classList.toggle('active');
           if (target.classList.contains('active')) {
-            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.maxHeight = content.scrollHeight + '1px';
           } else {
             content.style.maxHeight = null;
           }
@@ -284,7 +303,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // * ===== Show Filters Mobile
   (function showFiltersMobile() {
-    const menuBtn = document.querySelector('.filters__btn--mobile');
+    const menuBtn = document.querySelector('.filters-btn');
     const menu = document.querySelector('.filters-mobile');
     const menuCloseBtn = document.querySelector('.filters-mobile__close');
 
